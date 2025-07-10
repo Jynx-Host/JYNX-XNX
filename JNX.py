@@ -8,4 +8,4 @@ if '64' in bit:
   import key
 else:
   os.system('clear')
-  print(' YOUR SYSTEM IS 32 BIT NOT SUPPORTED'
+  print(' YOUR SYSTEM IS 32 BIT NOT SUPPORTED')
