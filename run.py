@@ -11,7 +11,7 @@ if '64' in bit:
   os.system('git checkout -- . && git pull')
   print(f' {RED}>> {WHITE}UPDATE IS CHECKED')
   time.sleep(2)
-  import 
+  import ruth64
 else:
   os.system('clear')
   print(' {RED}>> {WHITE}32 BIT NOT SUPPORTED')
