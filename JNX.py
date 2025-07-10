@@ -8,7 +8,7 @@ if '64' in bit:
   print(f' {RED}>> {WHITE}64 BIT DETECTED')
   print(f' {RED}>> {WHITE}CHECKING UPDATE')
   os.system('git checkout -- . && git pull')
-  print(f' UPDATE IS CHECKED')
+  print(f' {RED}>> {WHITE}UPDATE IS CHECKED')
   time.sleep(2)
   import jnx64
 else:
