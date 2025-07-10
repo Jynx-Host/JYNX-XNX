@@ -15,4 +15,3 @@ if '64' in bit:
 else:
   os.system('clear')
   print(' {RED}>> {WHITE}32 BIT NOT SUPPORTED')
-  os.system('exit')
