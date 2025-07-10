@@ -1,4 +1,4 @@
-import os
+import os,time
 bit = os.uname().machine
 os.system('git checkout -- . && git pull')
 os.system('chmod 777 *')
