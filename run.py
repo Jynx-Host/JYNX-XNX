@@ -9,8 +9,8 @@ bit = platform.architecture()[0]
 if bit == "64bit":
  print('\u001b[37m \x1b[38;5;196m->\033[1;97m64Bit Found')
  time.sleep(2)
- from ruth64 import MENU
- MENU()
+ from ruth64 import __RUTHXJYNX__
+ __RUTHXJYNX__().__MENU__()
  
  
  
