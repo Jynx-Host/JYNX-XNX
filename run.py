@@ -1,5 +1,5 @@
 import os, platform, time, sys
-os.system('xdg-open https://t.me/jynxhub')
+# os.system('xdg-open https://t.me/jynxhub')
 try:
  import requests
 except:os.system("pip install requests")
