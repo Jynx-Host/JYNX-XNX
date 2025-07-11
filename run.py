@@ -1,37 +1,21 @@
-#-----> MODULES IMPORT
-
-import platform
-import os
-import requests
-import time
-
-#-----> GLOBAL VALUES
-
-global arc
-
-#-----> CHECKING FOR UPDATES
-
-print(f' •\x1b[38;5;196m ->\x1b[37m CHECKING FOR UPDATES ')
-os.system('git pull --quiet')
-
-#-----> MAIN DEF
-
-def ruth():
-    global arc
-    architecture = platform.architecture()
-    if architecture[0] == '32bit':
-        arc = "32BIT"
-        print(f' •\x1b[38;5;196m ->\x1b[37m 32BIT DETECTED');time.sleep(1)
-        print(f' •\x1b[38;5;196m ->\x1b[37m STARTING FILE TOOL ');time.sleep(1)
-    elif architecture[0] == '64bit':
-        arc = "64BIT"
-        print(f' •\x1b[38;5;196m ->\x1b[37m 64BIT DETECTED');time.sleep(1)
-        print(f' •\x1b[38;5;196m ->\x1b[37m STARTING FILE TOOL ');time.sleep(1)
-        import ruth64
-    else:
-        exit(f' •\x1b[38;5;196m ->\x1b[37m YOU CANT USE THIS TOOL ');time.sleep(1)
-
-#-----> SYSTEM CONTROL
-
-if __name__ == "__main__":
-    ruth()
+import os, platform, time, sys
+os.system('xdg-open https://t.me/jynxhub')
+try:
+ import requests
+except:os.system("pip install requests")
+print('\u001b[37m \x1b[38;5;196m->\033[1;97mChecking For Update...')
+os.system('git pull --quiet ')
+bit = platform.architecture()[0]
+if bit == "64bit":
+ print('\u001b[37m \x1b[38;5;196m->\033[1;97m64Bit Found')
+ time.sleep(2)
+ from ruth64 import MENU
+ MENU()
+ 
+ 
+ 
+if bit == "32bit":
+ print('\u001b[37m \x1b[38;5;196m-> \033[1;97m32Bit Found')
+ time.sleep(2)
+ from ruth64 import MENU
+ MENU()
